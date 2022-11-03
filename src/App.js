@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {Container} from 'react/Container'
+import {BrowserRouter} from 'react-router-dom';
 
 function App() {
 
@@ -18,13 +19,17 @@ const [pokemonList, setPokemonList] = useState([]);
 
   
   return (
-    <div data-testid="app">
-      <Navigation />
+    <BrowserRouter>
+      <div data-testid="app">
+        <Navigation />
 
-      <Container>
         
-      </Container>
-    </div>
+        <Container>
+          
+        </Container>
+      </div>
+    </BrowserRouter>
+
   );
 }
 
