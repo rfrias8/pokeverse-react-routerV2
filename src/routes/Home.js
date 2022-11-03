@@ -5,7 +5,7 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
 import { PokemonCard } from './components/PokemonCard';
 
-function Home() {
+function Home(pokemonList) {
     const [filteredPokemon, setFilteredPokemon] = useState([]);
     const [search, setSearch] = useState('');
 
