@@ -3,7 +3,7 @@ import Col from 'react-bootstrap/Col';
 import FormControl from 'react-bootstrap/FormControl';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
-import { PokemonCard } from './components/PokemonCard';
+import { PokemonCard } from '../components/PokemonCard';
 
 function Home(pokemonList) {
     const [filteredPokemon, setFilteredPokemon] = useState([]);
