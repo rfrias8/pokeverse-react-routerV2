@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from 'react';
-import {Container} from 'react'
+import {Container} from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import {Home} from "./routes/Home"
-import {PokemonDetails} from "./routes/PokemonDetails"
+import {Home} from "./routes/Home";
+import {PokemonDetails} from "./routes/PokemonDetails";
+import {Navigation} from "./components/Navigation";
 
 function App() {
 
@@ -26,13 +27,13 @@ const [pokemonList, setPokemonList] = useState([]);
         <Navigation />
 
         <Routes>
-          <Route path="/" element={<Home />}></Route>
+          <Route path="/" element={<Home pokemonList={pokemonList}/>}></Route>
           <Route path="/:name" element={<PokemonDetails />}></Route>
         </Routes>
 
-        <Container>
+        {/* <Container>
           
-        </Container>
+        </Container> */}
       </div>
     </BrowserRouter>
 
